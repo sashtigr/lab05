@@ -2,7 +2,7 @@
 
 
 
-cd Green-Ace/workspace
+cd sashtigr/workspace
 
 git clone git@github.com:Green-Ace/TimpLab5.git
 
