@@ -3,6 +3,7 @@
 
 TEST(Account, Banking){
 	Account test(0,0);
+	
 	ASSERT_EQ(test.GetBalance(), 0);
 	ASSERT_THROW(test.ChangeBalance(100), std::runtime_error);
 	test.Lock();
