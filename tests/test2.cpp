@@ -12,6 +12,7 @@ TEST(Transaction, Banking){
 	ASSERT_EQ(test_tran.fee(), 1);
 	test_tran.set_fee(base_fee);
 	ASSERT_EQ(test_tran.fee(), base_fee);
+	
 //проверяем случаи когда транзакция не проходит
 	ASSERT_THROW(test_tran.Make(Alice, Alice, 1000), std::logic_error);
 	ASSERT_THROW(test_tran.Make(Alice, Bob, -50), std::invalid_argument);
